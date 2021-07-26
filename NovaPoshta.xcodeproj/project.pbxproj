@@ -11,6 +11,11 @@
 		80CC280B26AF314500C5674D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CC280A26AF314500C5674D /* ContentView.swift */; };
 		80CC280D26AF314700C5674D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80CC280C26AF314700C5674D /* Assets.xcassets */; };
 		80CC281026AF314700C5674D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80CC280F26AF314700C5674D /* Preview Assets.xcassets */; };
+		80CC281A26AF361700C5674D /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CC281926AF361700C5674D /* Color.swift */; };
+		80CC281C26AF387400C5674D /* ComponentLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CC281B26AF387400C5674D /* ComponentLogo.swift */; };
+		80CC281F26AF3D0600C5674D /* FullLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CC281E26AF3D0600C5674D /* FullLogo.swift */; };
+		80CC282126AF433700C5674D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80CC282026AF433700C5674D /* LaunchScreen.storyboard */; };
+		80CC282326AF4CF000C5674D /* ButtonAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CC282226AF4CF000C5674D /* ButtonAnimation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +25,11 @@
 		80CC280C26AF314700C5674D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		80CC280F26AF314700C5674D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		80CC281126AF314700C5674D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80CC281926AF361700C5674D /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		80CC281B26AF387400C5674D /* ComponentLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentLogo.swift; sourceTree = "<group>"; };
+		80CC281E26AF3D0600C5674D /* FullLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullLogo.swift; sourceTree = "<group>"; };
+		80CC282026AF433700C5674D /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		80CC282226AF4CF000C5674D /* ButtonAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonAnimation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,9 +64,9 @@
 			children = (
 				80CC280826AF314500C5674D /* NovaPoshtaApp.swift */,
 				80CC280A26AF314500C5674D /* ContentView.swift */,
-				80CC280C26AF314700C5674D /* Assets.xcassets */,
-				80CC281126AF314700C5674D /* Info.plist */,
-				80CC280E26AF314700C5674D /* Preview Content */,
+				80CC281D26AF3C9400C5674D /* View */,
+				80CC281826AF35F900C5674D /* Extension */,
+				80CC281726AF316800C5674D /* System32 */,
 			);
 			path = NovaPoshta;
 			sourceTree = "<group>";
@@ -67,6 +77,35 @@
 				80CC280F26AF314700C5674D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		80CC281726AF316800C5674D /* System32 */ = {
+			isa = PBXGroup;
+			children = (
+				80CC280C26AF314700C5674D /* Assets.xcassets */,
+				80CC281126AF314700C5674D /* Info.plist */,
+				80CC280E26AF314700C5674D /* Preview Content */,
+			);
+			path = System32;
+			sourceTree = "<group>";
+		};
+		80CC281826AF35F900C5674D /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				80CC281926AF361700C5674D /* Color.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		80CC281D26AF3C9400C5674D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				80CC281B26AF387400C5674D /* ComponentLogo.swift */,
+				80CC281E26AF3D0600C5674D /* FullLogo.swift */,
+				80CC282226AF4CF000C5674D /* ButtonAnimation.swift */,
+				80CC282026AF433700C5674D /* LaunchScreen.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +165,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80CC282126AF433700C5674D /* LaunchScreen.storyboard in Resources */,
 				80CC281026AF314700C5674D /* Preview Assets.xcassets in Resources */,
 				80CC280D26AF314700C5674D /* Assets.xcassets in Resources */,
 			);
@@ -140,6 +180,10 @@
 			files = (
 				80CC280B26AF314500C5674D /* ContentView.swift in Sources */,
 				80CC280926AF314500C5674D /* NovaPoshtaApp.swift in Sources */,
+				80CC282326AF4CF000C5674D /* ButtonAnimation.swift in Sources */,
+				80CC281C26AF387400C5674D /* ComponentLogo.swift in Sources */,
+				80CC281A26AF361700C5674D /* Color.swift in Sources */,
+				80CC281F26AF3D0600C5674D /* FullLogo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,10 +312,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"NovaPoshta/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"NovaPoshta/System32/Preview Content\"";
 				DEVELOPMENT_TEAM = 879U287R5Q;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = NovaPoshta/Info.plist;
+				INFOPLIST_FILE = NovaPoshta/System32/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -280,7 +324,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ihValery.NovaPoshta;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -290,10 +334,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"NovaPoshta/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"NovaPoshta/System32/Preview Content\"";
 				DEVELOPMENT_TEAM = 879U287R5Q;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = NovaPoshta/Info.plist;
+				INFOPLIST_FILE = NovaPoshta/System32/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -302,7 +346,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ihValery.NovaPoshta;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

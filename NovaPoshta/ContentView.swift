@@ -17,8 +17,13 @@ struct ContentView: View {
             
             FullLogo(animate: $animate)
             
+            VStack {
+                Trapeze()
+            }
+            
             ButtonAnimation(animate: $animate)
         }
+        
         .onAppear {
             withAnimation(.easeInOut(duration: 1)) {
                 animate = true

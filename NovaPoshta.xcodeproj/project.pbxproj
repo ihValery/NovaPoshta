@@ -16,6 +16,7 @@
 		80CC281F26AF3D0600C5674D /* FullLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CC281E26AF3D0600C5674D /* FullLogo.swift */; };
 		80CC282126AF433700C5674D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80CC282026AF433700C5674D /* LaunchScreen.storyboard */; };
 		80CC282326AF4CF000C5674D /* ButtonAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CC282226AF4CF000C5674D /* ButtonAnimation.swift */; };
+		80CC282626AF50EA00C5674D /* Trapeze.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CC282526AF50EA00C5674D /* Trapeze.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		80CC281E26AF3D0600C5674D /* FullLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullLogo.swift; sourceTree = "<group>"; };
 		80CC282026AF433700C5674D /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		80CC282226AF4CF000C5674D /* ButtonAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonAnimation.swift; sourceTree = "<group>"; };
+		80CC282526AF50EA00C5674D /* Trapeze.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trapeze.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				80CC280826AF314500C5674D /* NovaPoshtaApp.swift */,
 				80CC280A26AF314500C5674D /* ContentView.swift */,
 				80CC281D26AF3C9400C5674D /* View */,
+				80CC282426AF504B00C5674D /* Shape */,
 				80CC281826AF35F900C5674D /* Extension */,
 				80CC281726AF316800C5674D /* System32 */,
 			);
@@ -106,6 +109,14 @@
 				80CC282026AF433700C5674D /* LaunchScreen.storyboard */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		80CC282426AF504B00C5674D /* Shape */ = {
+			isa = PBXGroup;
+			children = (
+				80CC282526AF50EA00C5674D /* Trapeze.swift */,
+			);
+			path = Shape;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,6 +193,7 @@
 				80CC280926AF314500C5674D /* NovaPoshtaApp.swift in Sources */,
 				80CC282326AF4CF000C5674D /* ButtonAnimation.swift in Sources */,
 				80CC281C26AF387400C5674D /* ComponentLogo.swift in Sources */,
+				80CC282626AF50EA00C5674D /* Trapeze.swift in Sources */,
 				80CC281A26AF361700C5674D /* Color.swift in Sources */,
 				80CC281F26AF3D0600C5674D /* FullLogo.swift in Sources */,
 			);

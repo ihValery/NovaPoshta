@@ -8,9 +8,22 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var animate = false
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        ZStack {
+            Color.redApp
+                .ignoresSafeArea()
+            
+            FullLogo(animate: $animate)
+            
+            ButtonAnimation(animate: $animate)
+        }
+        .onAppear {
+            withAnimation(.easeInOut(duration: 1)) {
+                animate = true
+            }
+        }
     }
 }
 

@@ -28,13 +28,23 @@ struct ContentView: View {
                     Trapeze()
                         .fill(Color.white)
                         .frame(height: UIScreen.main.bounds.height * 2 / 3)
+                        .overlay(
+                            VStack {
+                                Text("Доставка будущего")
+                                    .bold()
+                                    .foregroundColor(.redApp)
+                                    .padding()
+                                Spacer()
+                            }
+                        )
                     
                     Trapeze()
                         .fill(Color.redApp)
-                        .frame(height: 50)
+                        .frame(height: UIScreen.main.bounds.height > 750 ? 70 : 50)
                         .overlay(Button(action: {}, label: {
                             Text("О Компании")
                                 .foregroundColor(.white)
+                                .padding(.bottom, UIScreen.main.bounds.height > 750 ? 20 : 0)
                         }))
                 }
                 .offset(y: animate ? 0 : 1000)

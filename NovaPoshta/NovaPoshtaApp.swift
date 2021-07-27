@@ -11,7 +11,8 @@ import SwiftUI
 struct NovaPoshtaApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ButtonApp()
+//            ContentView()
         }
     }
 }

@@ -9,49 +9,51 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var animate = false
+    @State private var showAbout = false
     
     var body: some View {
         ZStack {
-            Color.redApp
-                .ignoresSafeArea()
-            
-            TopPanel(animate: $animate)
-            
-            VStack {
-                Spacer()
+            ZStack {
+                Color.redApp
+                    .ignoresSafeArea()
                 
-                FullLogo()
-                TextLogo(animate: $animate)
+                TopPanel(animate: $animate)
                 
-                Spacer()
-                ZStack(alignment: .bottom) {
-                    Trapeze()
-                        .fill(Color.white)
-                        .frame(height: UIScreen.main.bounds.height * 2 / 3)
-                        .overlay(
-                            VStack {
-                                Text("Доставка будущего")
-                                    .bold()
-                                    .foregroundColor(.redApp)
-                                    .padding()
-                                Spacer()
-                            }
-                        )
+                VStack {
+                    Spacer()
                     
-                    Trapeze()
-                        .fill(Color.redApp)
-                        .frame(height: UIScreen.main.bounds.height > 750 ? 70 : 50)
-                        .overlay(Button(action: {}, label: {
-                            Text("О Компании")
-                                .foregroundColor(.white)
-                                .padding(.bottom, UIScreen.main.bounds.height > 750 ? 20 : 0)
-                        }))
+                    FullLogo()
+                    
+                    TextLogo(animate: $animate)
+                    
+                    Spacer()
+                    BigTrapeze(animate: $animate)
+                        .offset(y: animate ? 0 : 1000)
                 }
-                .offset(y: animate ? 0 : 1000)
+                .edgesIgnoringSafeArea(.bottom)
             }
-            .edgesIgnoringSafeArea(.bottom)
+            .blur(radius: showAbout ? 2 : 0)
+            
+            ZStack {
+                if showAbout {
+                    Color.black
+                        .opacity(0.4)
+                        .ignoresSafeArea()
+                        .onTapGesture {
+                            withAnimation(.easeIn) {
+                                showAbout = false
+                            }
+                        }
+                }
+                
+                VStack {
+                    Spacer()
+                    
+                    SmallTrapeze(showAbout: $showAbout)
+                }
+                .offset(y: animate ? (UIScreen.main.bounds.height > 750 ? 40 : 0) : 1000)
+            }
         }
-        
         .onAppear {
             withAnimation(.spring().delay(2)) {
                 animate = true

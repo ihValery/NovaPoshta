@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		800A31FC26AFCAF8001E8446 /* ButtonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800A31FB26AFCAF8001E8446 /* ButtonApp.swift */; };
+		800A31FC26AFCAF8001E8446 /* RedLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800A31FB26AFCAF8001E8446 /* RedLine.swift */; };
+		800A31FE26B05A71001E8446 /* FourButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800A31FD26B05A71001E8446 /* FourButton.swift */; };
+		80592E4626B0726C0093ECEA /* SmallTrapeze.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80592E4526B0726C0093ECEA /* SmallTrapeze.swift */; };
+		80592E4926B072A50093ECEA /* BigTrapeze.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80592E4826B072A50093ECEA /* BigTrapeze.swift */; };
 		80CC280926AF314500C5674D /* NovaPoshtaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CC280826AF314500C5674D /* NovaPoshtaApp.swift */; };
 		80CC280B26AF314500C5674D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CC280A26AF314500C5674D /* ContentView.swift */; };
 		80CC280D26AF314700C5674D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80CC280C26AF314700C5674D /* Assets.xcassets */; };
@@ -16,14 +19,16 @@
 		80CC281C26AF387400C5674D /* ComponentLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CC281B26AF387400C5674D /* ComponentLogo.swift */; };
 		80CC281F26AF3D0600C5674D /* FullLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CC281E26AF3D0600C5674D /* FullLogo.swift */; };
 		80CC282126AF433700C5674D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80CC282026AF433700C5674D /* LaunchScreen.storyboard */; };
-		80CC282326AF4CF000C5674D /* ButtonAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CC282226AF4CF000C5674D /* ButtonAnimation.swift */; };
 		80CC282626AF50EA00C5674D /* Trapeze.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CC282526AF50EA00C5674D /* Trapeze.swift */; };
 		80CC282826AF733A00C5674D /* TextLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CC282726AF733A00C5674D /* TextLogo.swift */; };
 		80CC282A26AF7D9400C5674D /* TopPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CC282926AF7D9400C5674D /* TopPanel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		800A31FB26AFCAF8001E8446 /* ButtonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonApp.swift; sourceTree = "<group>"; };
+		800A31FB26AFCAF8001E8446 /* RedLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedLine.swift; sourceTree = "<group>"; };
+		800A31FD26B05A71001E8446 /* FourButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourButton.swift; sourceTree = "<group>"; };
+		80592E4526B0726C0093ECEA /* SmallTrapeze.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallTrapeze.swift; sourceTree = "<group>"; };
+		80592E4826B072A50093ECEA /* BigTrapeze.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigTrapeze.swift; sourceTree = "<group>"; };
 		80CC280526AF314400C5674D /* NovaPoshta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NovaPoshta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80CC280826AF314500C5674D /* NovaPoshtaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovaPoshtaApp.swift; sourceTree = "<group>"; };
 		80CC280A26AF314500C5674D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -34,7 +39,6 @@
 		80CC281B26AF387400C5674D /* ComponentLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentLogo.swift; sourceTree = "<group>"; };
 		80CC281E26AF3D0600C5674D /* FullLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullLogo.swift; sourceTree = "<group>"; };
 		80CC282026AF433700C5674D /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		80CC282226AF4CF000C5674D /* ButtonAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonAnimation.swift; sourceTree = "<group>"; };
 		80CC282526AF50EA00C5674D /* Trapeze.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trapeze.swift; sourceTree = "<group>"; };
 		80CC282726AF733A00C5674D /* TextLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextLogo.swift; sourceTree = "<group>"; };
 		80CC282926AF7D9400C5674D /* TopPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopPanel.swift; sourceTree = "<group>"; };
@@ -109,12 +113,14 @@
 		80CC281D26AF3C9400C5674D /* View */ = {
 			isa = PBXGroup;
 			children = (
-				800A31FB26AFCAF8001E8446 /* ButtonApp.swift */,
+				800A31FB26AFCAF8001E8446 /* RedLine.swift */,
 				80CC281E26AF3D0600C5674D /* FullLogo.swift */,
 				80CC282926AF7D9400C5674D /* TopPanel.swift */,
 				80CC282726AF733A00C5674D /* TextLogo.swift */,
 				80CC281B26AF387400C5674D /* ComponentLogo.swift */,
-				80CC282226AF4CF000C5674D /* ButtonAnimation.swift */,
+				800A31FD26B05A71001E8446 /* FourButton.swift */,
+				80592E4826B072A50093ECEA /* BigTrapeze.swift */,
+				80592E4526B0726C0093ECEA /* SmallTrapeze.swift */,
 				80CC282026AF433700C5674D /* LaunchScreen.storyboard */,
 			);
 			path = View;
@@ -199,13 +205,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				80CC282A26AF7D9400C5674D /* TopPanel.swift in Sources */,
+				800A31FE26B05A71001E8446 /* FourButton.swift in Sources */,
 				80CC280B26AF314500C5674D /* ContentView.swift in Sources */,
 				80CC280926AF314500C5674D /* NovaPoshtaApp.swift in Sources */,
-				80CC282326AF4CF000C5674D /* ButtonAnimation.swift in Sources */,
+				80592E4926B072A50093ECEA /* BigTrapeze.swift in Sources */,
+				80592E4626B0726C0093ECEA /* SmallTrapeze.swift in Sources */,
 				80CC281C26AF387400C5674D /* ComponentLogo.swift in Sources */,
 				80CC282626AF50EA00C5674D /* Trapeze.swift in Sources */,
 				80CC281A26AF361700C5674D /* Color.swift in Sources */,
-				800A31FC26AFCAF8001E8446 /* ButtonApp.swift in Sources */,
+				800A31FC26AFCAF8001E8446 /* RedLine.swift in Sources */,
 				80CC281F26AF3D0600C5674D /* FullLogo.swift in Sources */,
 				80CC282826AF733A00C5674D /* TextLogo.swift in Sources */,
 			);

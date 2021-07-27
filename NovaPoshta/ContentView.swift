@@ -40,7 +40,7 @@ struct ContentView: View {
                         .opacity(0.4)
                         .ignoresSafeArea()
                         .onTapGesture {
-                            withAnimation(.easeIn) {
+                            withAnimation(.easeIn.speed(1)) {
                                 showAbout = false
                             }
                         }

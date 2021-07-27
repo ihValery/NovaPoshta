@@ -29,7 +29,7 @@ struct FullLogo: View {
         }
         .rotationEffect(.degrees(animate ? 0 : 90))
         .opacity(animate ? 1 : 0)
-        .offset(y: animaOffset ? 0 : 180)
+        .offset(y: animaOffset ? 0 : (UIScreen.main.bounds.height > 750 ? 180 : 110))
         .scaleEffect(animaOffset ? 1 : 1.6)
         
         .onAppear {

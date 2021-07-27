@@ -17,6 +17,8 @@
 		80CC282126AF433700C5674D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80CC282026AF433700C5674D /* LaunchScreen.storyboard */; };
 		80CC282326AF4CF000C5674D /* ButtonAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CC282226AF4CF000C5674D /* ButtonAnimation.swift */; };
 		80CC282626AF50EA00C5674D /* Trapeze.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CC282526AF50EA00C5674D /* Trapeze.swift */; };
+		80CC282826AF733A00C5674D /* TextLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CC282726AF733A00C5674D /* TextLogo.swift */; };
+		80CC282A26AF7D9400C5674D /* TopPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CC282926AF7D9400C5674D /* TopPanel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		80CC282026AF433700C5674D /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		80CC282226AF4CF000C5674D /* ButtonAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonAnimation.swift; sourceTree = "<group>"; };
 		80CC282526AF50EA00C5674D /* Trapeze.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trapeze.swift; sourceTree = "<group>"; };
+		80CC282726AF733A00C5674D /* TextLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextLogo.swift; sourceTree = "<group>"; };
+		80CC282926AF7D9400C5674D /* TopPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopPanel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,8 +107,10 @@
 		80CC281D26AF3C9400C5674D /* View */ = {
 			isa = PBXGroup;
 			children = (
-				80CC281B26AF387400C5674D /* ComponentLogo.swift */,
 				80CC281E26AF3D0600C5674D /* FullLogo.swift */,
+				80CC282926AF7D9400C5674D /* TopPanel.swift */,
+				80CC282726AF733A00C5674D /* TextLogo.swift */,
+				80CC281B26AF387400C5674D /* ComponentLogo.swift */,
 				80CC282226AF4CF000C5674D /* ButtonAnimation.swift */,
 				80CC282026AF433700C5674D /* LaunchScreen.storyboard */,
 			);
@@ -189,6 +195,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80CC282A26AF7D9400C5674D /* TopPanel.swift in Sources */,
 				80CC280B26AF314500C5674D /* ContentView.swift in Sources */,
 				80CC280926AF314500C5674D /* NovaPoshtaApp.swift in Sources */,
 				80CC282326AF4CF000C5674D /* ButtonAnimation.swift in Sources */,
@@ -196,6 +203,7 @@
 				80CC282626AF50EA00C5674D /* Trapeze.swift in Sources */,
 				80CC281A26AF361700C5674D /* Color.swift in Sources */,
 				80CC281F26AF3D0600C5674D /* FullLogo.swift in Sources */,
+				80CC282826AF733A00C5674D /* TextLogo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

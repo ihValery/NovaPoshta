@@ -15,7 +15,7 @@ struct ComponentLogo: View {
         Image(name)
             .resizable()
             .scaledToFill()
-            .frame(width: 60, height: 60)
+            .frame(width: 40, height: 40)
             .rotationEffect(.degrees(degrees))
     }
 }

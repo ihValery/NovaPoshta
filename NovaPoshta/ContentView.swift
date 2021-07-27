@@ -15,17 +15,35 @@ struct ContentView: View {
             Color.redApp
                 .ignoresSafeArea()
             
-            FullLogo(animate: $animate)
+            TopPanel(animate: $animate)
             
             VStack {
-                Trapeze()
+                Spacer()
+                
+                FullLogo()
+                TextLogo(animate: $animate)
+                
+                Spacer()
+                ZStack(alignment: .bottom) {
+                    Trapeze()
+                        .fill(Color.white)
+                        .frame(height: UIScreen.main.bounds.height * 2 / 3)
+                    
+                    Trapeze()
+                        .fill(Color.redApp)
+                        .frame(height: 50)
+                        .overlay(Button(action: {}, label: {
+                            Text("О Компании")
+                                .foregroundColor(.white)
+                        }))
+                }
+                .offset(y: animate ? 0 : 1000)
             }
-            
-            ButtonAnimation(animate: $animate)
+            .edgesIgnoringSafeArea(.bottom)
         }
         
         .onAppear {
-            withAnimation(.easeInOut(duration: 1)) {
+            withAnimation(.spring().delay(2)) {
                 animate = true
             }
         }

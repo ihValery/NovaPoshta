@@ -19,7 +19,7 @@ struct ButtonAnimation: View {
                 }
             }, label: {
                 Text("Анимация")
-                    .foregroundColor(.white)
+                    .foregroundColor(.redApp)
             })
         }
     }

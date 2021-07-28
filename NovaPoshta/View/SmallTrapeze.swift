@@ -10,7 +10,7 @@ import SwiftUI
 struct SmallTrapeze: View {
     @Binding var showAbout: Bool
     private var height: CGFloat {
-        UIScreen.main.bounds.height > 750 ? 270 : 250
+        UIScreen.main.bounds.height > 750 ? 310 : 300
     }
     
     var body: some View {
@@ -21,33 +21,34 @@ struct SmallTrapeze: View {
                 .overlay(
                     VStack {
                         Button(action: {
-                            withAnimation(.spring()) {
+                            withAnimation(.spring(dampingFraction: 0.6, blendDuration: 0.2)) {
                                 showAbout.toggle()
                             }
                         }, label: {
                         Text("О Компании")
                             .foregroundColor(.white)
                             .padding()
+                            .padding(.horizontal, 80)
                         })
                         
-                        Spacer()
+//                        Spacer()
                         
                         VStack {
                             Button(action: {}, label: {
                                 Text("Новости")
                             })
                             
-                            LineRed()
+                            LineWhite()
                             Button(action: {}, label: {
                                 Text("Центр поддержки")
                             })
 
-                            LineRed()
+                            LineWhite()
                             Button(action: {}, label: {
                                 Text("Документация")
                             })
 
-                            LineRed()
+                            LineWhite()
                         }
                         .font(.title3)
                         .foregroundColor(.white)
@@ -55,7 +56,7 @@ struct SmallTrapeze: View {
                         Spacer()
                 })
         }
-        .offset(y: showAbout ? 0 : 200)
+        .offset(y: showAbout ? 80 : 250)
     }
 }
 
@@ -65,7 +66,7 @@ struct SmallTrapeze_Previews: PreviewProvider {
     }
 }
 
-struct LineRed: View {
+struct LineWhite: View {
     var body: some View {
         ZStack {
             Rectangle()

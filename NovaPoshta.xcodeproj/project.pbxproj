@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		800A31FC26AFCAF8001E8446 /* RedLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800A31FB26AFCAF8001E8446 /* RedLine.swift */; };
+		800A31FC26AFCAF8001E8446 /* GrayLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800A31FB26AFCAF8001E8446 /* GrayLine.swift */; };
 		800A31FE26B05A71001E8446 /* FourButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800A31FD26B05A71001E8446 /* FourButton.swift */; };
 		80592E4626B0726C0093ECEA /* SmallTrapeze.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80592E4526B0726C0093ECEA /* SmallTrapeze.swift */; };
 		80592E4926B072A50093ECEA /* BigTrapeze.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80592E4826B072A50093ECEA /* BigTrapeze.swift */; };
@@ -22,10 +22,11 @@
 		80CC282626AF50EA00C5674D /* Trapeze.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CC282526AF50EA00C5674D /* Trapeze.swift */; };
 		80CC282826AF733A00C5674D /* TextLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CC282726AF733A00C5674D /* TextLogo.swift */; };
 		80CC282A26AF7D9400C5674D /* TopPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CC282926AF7D9400C5674D /* TopPanel.swift */; };
+		80F3E10E26B21D9F007F060F /* RedLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F3E10D26B21D9F007F060F /* RedLine.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		800A31FB26AFCAF8001E8446 /* RedLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedLine.swift; sourceTree = "<group>"; };
+		800A31FB26AFCAF8001E8446 /* GrayLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrayLine.swift; sourceTree = "<group>"; };
 		800A31FD26B05A71001E8446 /* FourButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourButton.swift; sourceTree = "<group>"; };
 		80592E4526B0726C0093ECEA /* SmallTrapeze.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallTrapeze.swift; sourceTree = "<group>"; };
 		80592E4826B072A50093ECEA /* BigTrapeze.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigTrapeze.swift; sourceTree = "<group>"; };
@@ -42,6 +43,7 @@
 		80CC282526AF50EA00C5674D /* Trapeze.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trapeze.swift; sourceTree = "<group>"; };
 		80CC282726AF733A00C5674D /* TextLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextLogo.swift; sourceTree = "<group>"; };
 		80CC282926AF7D9400C5674D /* TopPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopPanel.swift; sourceTree = "<group>"; };
+		80F3E10D26B21D9F007F060F /* RedLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedLine.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 				80CC280826AF314500C5674D /* NovaPoshtaApp.swift */,
 				80CC280A26AF314500C5674D /* ContentView.swift */,
 				80CC281D26AF3C9400C5674D /* View */,
+				80F3E10C26B21D86007F060F /* Line */,
 				80CC282426AF504B00C5674D /* Shape */,
 				80CC281826AF35F900C5674D /* Extension */,
 				80CC281726AF316800C5674D /* System32 */,
@@ -113,7 +116,7 @@
 		80CC281D26AF3C9400C5674D /* View */ = {
 			isa = PBXGroup;
 			children = (
-				800A31FB26AFCAF8001E8446 /* RedLine.swift */,
+				800A31FB26AFCAF8001E8446 /* GrayLine.swift */,
 				80CC281E26AF3D0600C5674D /* FullLogo.swift */,
 				80CC282926AF7D9400C5674D /* TopPanel.swift */,
 				80CC282726AF733A00C5674D /* TextLogo.swift */,
@@ -132,6 +135,14 @@
 				80CC282526AF50EA00C5674D /* Trapeze.swift */,
 			);
 			path = Shape;
+			sourceTree = "<group>";
+		};
+		80F3E10C26B21D86007F060F /* Line */ = {
+			isa = PBXGroup;
+			children = (
+				80F3E10D26B21D9F007F060F /* RedLine.swift */,
+			);
+			path = Line;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80F3E10E26B21D9F007F060F /* RedLine.swift in Sources */,
 				80CC282A26AF7D9400C5674D /* TopPanel.swift in Sources */,
 				800A31FE26B05A71001E8446 /* FourButton.swift in Sources */,
 				80CC280B26AF314500C5674D /* ContentView.swift in Sources */,
@@ -213,7 +225,7 @@
 				80CC281C26AF387400C5674D /* ComponentLogo.swift in Sources */,
 				80CC282626AF50EA00C5674D /* Trapeze.swift in Sources */,
 				80CC281A26AF361700C5674D /* Color.swift in Sources */,
-				800A31FC26AFCAF8001E8446 /* RedLine.swift in Sources */,
+				800A31FC26AFCAF8001E8446 /* GrayLine.swift in Sources */,
 				80CC281F26AF3D0600C5674D /* FullLogo.swift in Sources */,
 				80CC282826AF733A00C5674D /* TextLogo.swift in Sources */,
 			);

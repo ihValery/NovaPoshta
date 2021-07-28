@@ -12,8 +12,8 @@ struct FourButton: View {
     
     var body: some View {
         ZStack {
-            Line()
-            Line()
+            GrayLine()
+            GrayLine()
                 .rotationEffect(.degrees(90))
             
             VStack {

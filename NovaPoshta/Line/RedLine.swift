@@ -9,30 +9,44 @@ import SwiftUI
 
 struct RedLine: View {
     @State private var change = false
+    @State private var animateOnChange = false
     
     var body: some View {
-        ZStack {
-            VStack{
-                Spacer()
-                Button(action: {
-                    withAnimation(.linear(duration: 2).repeatCount(1, autoreverses: false)) {
-                        change.toggle()
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 2, execute: {
-                            change = false
-                        })
-                    }
-                }, label: {
-                    Text("Change")
-                })
+        VStack {
+            Spacer()
+            
+            ZStack {
+                RoundedRectangle(cornerRadius: 3)
+                    .fill(LinearGradient(gradient: Gradient(colors: [.gray, .white]),
+                                         startPoint: .leading, endPoint: .trailing))
+                    .frame(width: 200, height: 1)
+                
+                RoundedRectangle(cornerRadius: 3)
+                    .fill(LinearGradient(gradient: Gradient(colors: [.redApp, .white]),
+                                         startPoint: .leading, endPoint: .trailing))
+                    .frame(width: 200, height: 1)
+                    .mask(
+                        RoundedRectangle(cornerRadius: 3)
+                            .offset(x: change ? 200 : -200)
+                            .animation(.linear(duration: 1).repeatCount(1, autoreverses: false), value: animateOnChange)
+                    )
             }
             
+            Spacer()
             
-            VStack {
-                GrayLine()
-                GrayLine()
-                    .rotationEffect(.degrees(90))
-            }
-            .frame(width: 200, height: 200)
+            Button(action: {
+                change.toggle()
+                
+                if change {
+                    animateOnChange.toggle()
+                }
+                
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                    change = false
+                }
+            }, label: {
+                Text("Start")
+            })
         }
     }
 }

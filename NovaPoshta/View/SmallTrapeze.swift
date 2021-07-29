@@ -31,8 +31,6 @@ struct SmallTrapeze: View {
                             .padding(.horizontal, 80)
                         })
                         
-//                        Spacer()
-                        
                         VStack {
                             Button(action: {}, label: {
                                 Text("Новости")

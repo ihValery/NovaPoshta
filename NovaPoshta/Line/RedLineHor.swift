@@ -27,7 +27,7 @@ struct RedLineHor: View {
                 .mask(
                     RoundedRectangle(cornerRadius: 3)
                         .offset(x: change ? width : -width)
-                        .animation(.linear(duration: 1).repeatCount(1, autoreverses: false), value: animateOnChange)
+                        .animation(.linear(duration: 0.5).repeatCount(1, autoreverses: false), value: animateOnChange)
                 )
         }
     }
@@ -53,7 +53,7 @@ struct RedLineVer: View {
                 .mask(
                     RoundedRectangle(cornerRadius: 3)
                         .offset(y: change ? width : -width)
-                        .animation(.linear(duration: 1).repeatCount(1, autoreverses: false), value: animateOnChange)
+                        .animation(.linear(duration: 0.5).repeatCount(1, autoreverses: false), value: animateOnChange)
                 )
         }
     }

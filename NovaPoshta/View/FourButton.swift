@@ -34,33 +34,39 @@ struct FourButton: View {
             VStack {
                 HStack {
                     OneBigButton(image: "magnifyingglass", one: "Отследить", two: "доставку") {
-                        change1.toggle()
-                        change3.toggle()
-                        
-                        if change1 && change3 {
-                            animateOnChange.toggle()
-                        }
-                        
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                            change1 = false
-                            change3 = false
-                        }
+                        switchingForAnimation(one: $change1, two: $change3)
                     }
                     
-                    OneBigButton(image: "plus.slash.minus", one: "Рассчитать", two: "доставку") {}
+                    OneBigButton(image: "plus.slash.minus", one: "Рассчитать", two: "доставку") {
+                        switchingForAnimation(one: $change3, two: $change2)
+                    }
                 }
                 
                 HStack {
-                    OneBigButton(image: "map", one: "Найдите", two: "отделение") {}
+                    OneBigButton(image: "map", one: "Найдите", two: "отделение") {
+                        switchingForAnimation(one: $change1, two: $change4)
+                    }
                     
-                    OneBigButton(image: "person.badge.plus", one: "Вызвать", two: "курьера") {}
+                    OneBigButton(image: "person.badge.plus", one: "Вызвать", two: "курьера") {
+                        switchingForAnimation(one: $change2, two: $change4)
+                    }
                 }
             }
         }
     }
     
-    private func switchingForAnimation() {
+    private func switchingForAnimation(one: Binding<Bool>, two: Binding<Bool>) {
+        one.wrappedValue.toggle()
+        two.wrappedValue.toggle()
         
+        if one.wrappedValue && two.wrappedValue {
+            animateOnChange.toggle()
+        }
+
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            one.wrappedValue = false
+            two.wrappedValue = false
+        }
     }
 }
 

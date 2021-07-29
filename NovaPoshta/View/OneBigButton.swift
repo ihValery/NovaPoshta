@@ -20,7 +20,9 @@ struct OneBigButton: View {
 //    }
     
     var body: some View {
-        Button(action: { action() }, label: {
+        Button(action: {
+            action()
+        }, label: {
             VStack {
                 Image(systemName: image)
                     .font(.system(size: UIScreen.main.bounds.height > 750 ? 50 : 30))

@@ -10,61 +10,62 @@ import SwiftUI
 struct FourButton: View {
     @Binding var animate: Bool
     
+    @State private var change1 = false
+    @State private var change2 = false
+    @State private var change3 = false
+    @State private var change4 = false
+    
+    @State private var animateOnChange = false
+    
     var body: some View {
         ZStack {
-            GrayLine()
-            GrayLine()
-                .rotationEffect(.degrees(90))
+            HStack(spacing: 0) {
+                RedLineHor(change: $change1, animateOnChange: $animateOnChange)
+                    .rotationEffect(.degrees(180))
+                RedLineHor(change: $change2, animateOnChange: $animateOnChange)
+            }
+            
+            VStack(spacing: 0) {
+                RedLineVer(change: $change3, animateOnChange: $animateOnChange)
+                    .rotationEffect(.degrees(180))
+                RedLineVer(change: $change4, animateOnChange: $animateOnChange)
+            }
             
             VStack {
                 HStack {
-                    OneButton(image: "magnifyingglass", "Отследить", "доставку")
+                    OneBigButton(image: "magnifyingglass", one: "Отследить", two: "доставку") {
+                        change1.toggle()
+                        change3.toggle()
+                        
+                        if change1 && change3 {
+                            animateOnChange.toggle()
+                        }
+                        
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                            change1 = false
+                            change3 = false
+                        }
+                    }
                     
-                    OneButton(image: "plus.slash.minus", "Рассчитать", "доставку")
+                    OneBigButton(image: "plus.slash.minus", one: "Рассчитать", two: "доставку") {}
                 }
                 
                 HStack {
-                    OneButton(image: "map", "Найдите", "отделение")
+                    OneBigButton(image: "map", one: "Найдите", two: "отделение") {}
                     
-                    OneButton(image: "person.badge.plus", "Вызвать", "курьера")
+                    OneBigButton(image: "person.badge.plus", one: "Вызвать", two: "курьера") {}
                 }
             }
         }
+    }
+    
+    private func switchingForAnimation() {
+        
     }
 }
 
 struct FourButton_Previews: PreviewProvider {
     static var previews: some View {
         FourButton(animate: .constant(true))
-    }
-}
-
-struct OneButton: View {
-    let image: String
-    let text: String
-    let textTwo: String
-    
-    init(image: String,_ text: String,_ textTwo: String) {
-        self.image = image
-        self.text = text
-        self.textTwo = textTwo
-    }
-    
-    var body: some View {
-        Button(action: {}, label: {
-            VStack {
-                Image(systemName: image)
-                    .font(.system(size: UIScreen.main.bounds.height > 750 ? 50 : 30))
-                    .foregroundColor(.redApp)
-                    .padding()
-                VStack {
-                    Text(text)
-                    Text(textTwo)
-                }
-                .font(.title2)
-                .foregroundColor(.black)
-            }
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
-        })
     }
 }

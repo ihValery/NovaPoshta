@@ -22,7 +22,9 @@
 		80CC282626AF50EA00C5674D /* Trapeze.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CC282526AF50EA00C5674D /* Trapeze.swift */; };
 		80CC282826AF733A00C5674D /* TextLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CC282726AF733A00C5674D /* TextLogo.swift */; };
 		80CC282A26AF7D9400C5674D /* TopPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CC282926AF7D9400C5674D /* TopPanel.swift */; };
-		80F3E10E26B21D9F007F060F /* RedLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F3E10D26B21D9F007F060F /* RedLine.swift */; };
+		80F3E10E26B21D9F007F060F /* RedLineHor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F3E10D26B21D9F007F060F /* RedLineHor.swift */; };
+		80F3E11026B23141007F060F /* FourRedLines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F3E10F26B23141007F060F /* FourRedLines.swift */; };
+		80F3E11226B2389E007F060F /* OneBigButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F3E11126B2389E007F060F /* OneBigButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,7 +45,9 @@
 		80CC282526AF50EA00C5674D /* Trapeze.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trapeze.swift; sourceTree = "<group>"; };
 		80CC282726AF733A00C5674D /* TextLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextLogo.swift; sourceTree = "<group>"; };
 		80CC282926AF7D9400C5674D /* TopPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopPanel.swift; sourceTree = "<group>"; };
-		80F3E10D26B21D9F007F060F /* RedLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedLine.swift; sourceTree = "<group>"; };
+		80F3E10D26B21D9F007F060F /* RedLineHor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedLineHor.swift; sourceTree = "<group>"; };
+		80F3E10F26B23141007F060F /* FourRedLines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourRedLines.swift; sourceTree = "<group>"; };
+		80F3E11126B2389E007F060F /* OneBigButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneBigButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +129,7 @@
 				80592E4826B072A50093ECEA /* BigTrapeze.swift */,
 				80592E4526B0726C0093ECEA /* SmallTrapeze.swift */,
 				80CC282026AF433700C5674D /* LaunchScreen.storyboard */,
+				80F3E11126B2389E007F060F /* OneBigButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -140,7 +145,8 @@
 		80F3E10C26B21D86007F060F /* Line */ = {
 			isa = PBXGroup;
 			children = (
-				80F3E10D26B21D9F007F060F /* RedLine.swift */,
+				80F3E10D26B21D9F007F060F /* RedLineHor.swift */,
+				80F3E10F26B23141007F060F /* FourRedLines.swift */,
 			);
 			path = Line;
 			sourceTree = "<group>";
@@ -215,7 +221,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80F3E10E26B21D9F007F060F /* RedLine.swift in Sources */,
+				80F3E10E26B21D9F007F060F /* RedLineHor.swift in Sources */,
+				80F3E11026B23141007F060F /* FourRedLines.swift in Sources */,
+				80F3E11226B2389E007F060F /* OneBigButton.swift in Sources */,
 				80CC282A26AF7D9400C5674D /* TopPanel.swift in Sources */,
 				800A31FE26B05A71001E8446 /* FourButton.swift in Sources */,
 				80CC280B26AF314500C5674D /* ContentView.swift in Sources */,

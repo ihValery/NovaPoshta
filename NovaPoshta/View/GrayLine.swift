@@ -13,8 +13,7 @@ struct GrayLine: View {
         ZStack {
             Rectangle()
                 .fill(LinearGradient(gradient: Gradient(colors: [.white, .gray.opacity(0.3), .white]), startPoint: .leading, endPoint: .trailing))
-                .frame(height: 1)
-                .frame(maxWidth: .infinity)
+                .frame(width: UIScreen.main.bounds.width * 2 / 3, height: 1)
         }
     }
 }
